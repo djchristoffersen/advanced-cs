@@ -22,7 +22,7 @@ namespace EventTest
          UnsafeFire( del, sender, t );
       }
 
-      public static void UnsafeFire( Delegate del, params object[] args )
+      private static void UnsafeFire( Delegate del, params object[] args )
       {
          if ( del == null )
          {
